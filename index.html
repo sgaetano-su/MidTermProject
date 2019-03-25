@@ -13,16 +13,83 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="grid.css"/>
+    <script src="variables.js"></script>
+
+ 
 
 </head>
 
 <body>
 
+
+<!-- ------------------------------------------------------------------------------- -->
+<!-- On Load Modal -->
+
+    <div id="myModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Subscribe to Our Newsletter!</h4>
+            </div>
+            <div class="modal-body">
+              <p>Don't miss out on the latest exciting places to visit! Subscribe to our Newsletter
+              and receive personalized Emails about the coolest travel destinations based on your 
+              favorites
+              </p>
+            </div>
+            <form id="subscribe">
+                <div class="form-group">
+                  <label for="name"><h5>Name</h5></label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Insert Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="email"><h5>Email</h5></label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Insert Email">
+                </div>      
+
+                <div class="form-group">
+                  <label for="phone"><h5>Favorite Travel Spot</h5></label>
+                  <input type="tel" class="form-control" id="phone" aria-describedby="phone" placeholder="What is your favorite travel spot?">
+                </div>     
+
+                <div class="text-center">
+                  <button id="subscribebtn" type="button" class="btn btn-primary btn-lg round gradiant" data-dismiss="modal" data-toggle="modal" data-target="#myModal3">
+                    <text style="color:#440381;">Submit</text></button>
+                </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+
+<!-- ------------------------------------------------------------------------------- -->
+<!-- Subcribe Modal -->
+
+      <div class="modal fade" id="myModal3" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Thank you for subscribing!</h3>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
 <!-- ------------------------------------------------------------------------------- -->
 <!-- Header -->
 
-<header>
-    <nav class="navbar navbar-light navbar-expand-lg" role="navigation">
+<header class="nav-animations">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" role="navigation">
       <div class="container-fluid">
         <a class="navbar-brand purple" href="#">Travel 363</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +133,7 @@
   <div class= "container">
     <div class= "row">
           <div class="card">
-              <img src="images\sixflags.jpg" class="card-img-top img-fluid" alt="Image of Six Flags Entrance" height="300">
+              <img src="images\entrancee.jpg" class="card-img-top img-fluid" alt="Image of Six Flags Entrance" >
               <div class="card-body">
                 <h3 class="card-title subhead blue2">About Six Flags Great Adventure</h3>
                 <p class="body">Six Flags Great Adventure is an amusement park located in Jackson, New Jersey, 
@@ -74,12 +141,10 @@
                    the park complex also contains the Hurricane Harbor water park.</p>
               </div>
       </div>
-
       </div>
     </div>
   </div>
 </section>
-
 
 
 <!-- -------------------------------------------------------------------- -->
@@ -87,10 +152,10 @@
 
 <a name="parks"></a>
 <section class="gradiant">
-        <div class="container">
+        <div class="container border-top">
             <h1 class="text-center h1margin">Parks</h1>
                 <div class="row col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="card col-12 col-sm-12 col-md-12 col-xl-4 mx-auto" style="width: 18rem;">
+                        <div class="card shadow-drop-2-center col-12 col-sm-12 col-md-12 col-xl-4 mx-auto" style="width: 18rem;">
                             <img class="card-img-top" src="images\sixflags.jpg" alt="Six Flags Entrance">
                                 <div class="card-body">
                                     <h3 class="card-title">Amusement Park</h3>
@@ -131,22 +196,36 @@
 
 <a name="bestrides"></a>
 <section class="gradiant3">
-    <div class="container border-top">
+    <div class="container border-top ">
         <h1 class="text-center h1margin">Best Rides</h1>
             <div class="row col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="col-12 col-sm-12 col-md-12 col-xl-6" >
-                        <img src="images\eltoro.jpg" class="img-responsive imageedit" alt="Image of El Toro Rollercoaster" >
+                        <div class="container imgshake">
+                          <img src="images\eltoro.jpg" class="img-responsive imageedit imground" alt="Image of El Toro Rollercoaster"  >
+                          <div class="centered h1images">El Toro</div>
+                        </div>
                     </div>
+
                     <div class=" col-12 col-sm-12 col-md-12 col-xl-6" >
-                        <img src="images\bizzaro.jpg" class="img-responsive imageedit" alt="Image of Bizarro Rollercoaster" >
+                      <div class="container imgshake">
+                        <img src="images\bizarro.jpg" class="img-responsive imageedit imground " alt="Image of Bizarro Rollercoaster" >
+                      <div class="centered h1images">Bizarro</div>
+                      </div>
                     </div>
+                    
                     <div class="col-12 col-sm-12 col-md-12 col-xl-6">
-                        <img src="images\kingdaka.jpg" class="img-responsive imageedit" alt="Image of Kingda Ka Rollercoaster" >
+                      <div class="container imgshake">
+                        <img src="images\kingdaka.jpg" class="img-responsive imageedit imground" alt="Image of Kingda Ka Rollercoaster">
+                        <div class="centered h1images">Kingda Ka</div>
+                      </div>
                     </div>
                     <div class=" col-12 col-sm-12 col-md-12 col-xl-6" >
-                        <img src="images\thejoker.jpg" class="img-responsive imageedit" alt="Image of THe Joker Rollercoaster" >
+                      <div class="container imgshake">
+                        <img src="images\thejoker.jpg" class="img-responsive imageedit imground" alt="Image of The Joker Rollercoaster">
+                      <div class="centered h1images">The Joker</div>
                     </div>
-            </div>
+                   </div>
+         </div>
     </div>
 </section>
 
@@ -155,14 +234,14 @@
 
 <a name="recommendedactivity"></a>
 <section class="gradiant">
-  <div class="container">
+  <div class="container border-top">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-xl-12"> 
             <h1 class="h1margin">Recommended Activity</h1>
         </div>
             <div class="col-12 col-sm-12 col-md-12 col-xl-12">
             <div class="card">
-                    <img src="images\nitro.jpg" class="card-img-top img-fluid" alt="Image of Nitro Rollercoaster" height="300">
+                    <img src="images\nitro.jpg" class="card-img-top img-fluid" alt="Image of Nitro Rollercoaster">
                     <div class="card-body">
                       <h3 class="card-title subhead blue2">Nitro Rollercoaster</h3>
                       <p class="body">One of the most intense rollercoasters at Six Flags Great Adventure, the 
@@ -185,18 +264,36 @@
         <div class="container border-top">
             <h1 class="text-center h1margin">Gallery</h1>
                 <div class="row col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-6" >
-                            <img src="images\sixflags.jpg" class="img-responsive imageedit" alt="Image of Six Flags Entrance"  height="300">
-                        </div>
-                        <div class=" col-12 col-sm-12 col-md-12 col-xl-6" >
-                            <img src="images\rides.jpg" class="img-responsive imageedit" alt="Image of Six Flags Rollercoaster Ride"  height="300">
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-6">
-                            <img src="images\attractions.jpg" class="img-responsive imageedit" alt="Image of People posing with Porky the Pig"  height="300">
-                        </div>
-                        <div class=" col-12 col-sm-12 col-md-12 col-xl-6">
-                            <img src="images\food.jpg" class="img-responsive imageedit" alt="Image of Image of Directions to Restaurants" height="300" >
-                        </div>
+ 
+                     <div class=" col-12 col-sm-12 col-md-12 col-xl-6" >
+                      <div class="container">
+                          <img src="images\sixflags.jpg" class="img-responsive imageedit imground" alt="Image of Six Flags Entrance">
+                          <div class="centered h1images">Parks</div>
+                      </div>
+                    </div>
+
+                     <div class=" col-12 col-sm-12 col-md-12 col-xl-6" >
+                      <div class="container">
+                          <img src="images\rides.jpg" class="img-responsive imageedit imground" alt="Image of Six Flags Rollercoaster Ride" >
+                          <div class="centered h1images">Rides</div>
+                      </div>
+                    </div>
+
+
+                     <div class=" col-12 col-sm-12 col-md-12 col-xl-6" >
+                      <div class="container">
+                          <img src="images\attractions.jpg" class="img-responsive imageedit imground" alt="Image of People posing with Porky the Pig"  >
+                          <div class="centered h1images">Attractions</div>
+                      </div>
+                    </div>
+
+                     <div class=" col-12 col-sm-12 col-md-12 col-xl-6" >
+                      <div class="container">
+                          <img src="images\food.jpg" class="img-responsive imageedit imground" alt="Image of Image of Directions to Restaurants" height="400" >
+                          <div class="centered h1images">Restaurants</div>
+                      </div>
+                    </div>
+
                 </div>
         </div>
 </section>
@@ -213,7 +310,7 @@
   <div class="container">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-xl-12">
-          <h1 class="h1margin">Contact</h1>
+          <h1 class="text-center h1margin">Contact</h1>
             <form>
                 <div class="form-group">
                   <label for="name"><h5>Name</h5></label>
@@ -235,14 +332,34 @@
                   <textarea class="form-control" id="message" rows="3" placeholder="What can we help you with?"></textarea>
                 </div>
                 <div class="text-center">
-                  <button type="button" class="btn btn-primary btn-lg round gradiant"><text style="color:#440381;">Submit</text></button>
+                  <button type="button" class="btn btn-primary btn-lg round gradiant" data-toggle="modal" data-target="#myModal">
+                    <text style="color:#440381;">Submit</text></button>
                 </div>
+                
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h3 class="modal-title">Thank you for the message!</h3>
+                        </div>
+                        <div class="modal-body">
+                          <p style="text-align:center">We will respond to you by either Email or Phone within 24-48 hours of the message being received </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
             </form>
           </div>
       </div>
     </div>
 </section>
-
 
 
 <!-- ------------------------------------------------------------------------ -->
