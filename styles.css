@@ -1,14 +1,170 @@
+html,body {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
 
+body {
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    font-family: 'Muli', sans-serif;
+
+}
+
+
+img {
+    width: 100%;
+}
+
+.row {
+    margin:0;
+}
+
+/* Colors */ 
+
+.purple {
+    color:#440381;
+}
+
+.turqoise {
+    color:#59C3C3;
+}
+
+.skyblue {
+    color:#2DC7FF; 
+}
+
+.grayblue {
+    color:#CFE8EF;
+}
+
+.gradiant {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #BCEDF6;
+   color: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #BCEDF6;
+}
+
+.gradiant2 {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(45, 199, 255, 0.5);
+}
+
+.gradiant3 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), rgba(68, 3, 129, 0.3);
+}
+
+.gradiant4 {
+    
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(89, 195, 195, 0.5);
+}
 
 
 .navbar {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #BCEDF6;
+    position: relative;
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 139px;
+    height: 36px;
+    left: calc(50% - 139px/2 + 0.5px);
+    top: calc(50% - 36px/2);
+    justify-content: center;
+    text-align:center;
+ 
+
+}
+
+.navbar a{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    color:#440381;
 }
 
 
 
 
 
+.card {
+    margin:30px;
+    padding:0px;
+}
+
+
+.imageedit {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+.form-group {
+    margin:20px;
+}
+
+
+.form-group:last-of-type{
+    margin-bottom:0px;
+}
+
+.btn {
+    border-radius: 24px;
+    border-color:white;
+    margin-bottom:20px;
+}
+
+
+
+
 footer {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #BCEDF6;
+}
+
+
+h1 
+{
+    font-weight:bold;
+    color:#440381;
+    font-size: 30px;
+    text-align:center;
+}
+
+
+.h1margin {
+    margin-top:30px;
+}
+
+h2 {
+    font-weight:bold;
+    color:#440381;
+    font-size: 25px;
+}
+
+
+h3 {
+    font-weight:bold;
+    color:#440381;
+    font-size: 20px;
+    text-align:center;
+}
+
+
+h4 {
+    font-weight:bold;
+    color:#440381;
+    font-size: 18px;
+}
+
+
+h5 {
+    font-weight:bold;
+    color:#440381;
+    font-size: 16px;
+}
+
+p {
+    font-weight:bold;
+    color:#440381;
+    font-size: 14px;
 }

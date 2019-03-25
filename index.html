@@ -10,68 +10,254 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="grid.css"/>
 
 </head>
 
-<nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">IST 363</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
+<body>
+
+<!-- ------------------------------------------------------------------------------- -->
+<!-- Header -->
+
+<header>
+    <nav class="navbar navbar-light navbar-expand-lg" role="navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand purple" href="#">Travel 363</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link purple" href="#about">About<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mr-auto">
+                <a class="nav-link purple" href="#parks">Parks</a>
+              </li>
+              <li class="nav-item mr-auto">
+                  <a class="nav-link purple" href="#bestrides">Rides</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+               <li class="nav-item ">
+                <a class="nav-link purple" href="#recommendedactivity">Recommended Activity</a>
+              </li>
+               <li class="nav-item ">
+                <a class="nav-link purple" href="#gallery">Gallery</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link purple" href="#contact">Contact</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+
+<!-- ------------------------------------------------------------------- -->
+<!-- About Section -->
+
+<a name="about"></a>
+<section> 
+  <div class= "container">
+    <div class= "row">
+          <div class="card">
+              <img src="images\sixflags.jpg" class="card-img-top img-fluid" alt="Image of Six Flags Entrance" height="300">
+              <div class="card-body">
+                <h3 class="card-title subhead blue2">About Six Flags Great Adventure</h3>
+                <p class="body">Six Flags Great Adventure is an amusement park located in Jackson, New Jersey, 
+                  owned by Six Flags Entertainment Corp. Situated between New York City and Philadelphia,
+                   the park complex also contains the Hurricane Harbor water park.</p>
+              </div>
+      </div>
+
+      </div>
     </div>
-  </nav>
+  </div>
+</section>
+
+
+
+<!-- -------------------------------------------------------------------- -->
+<!-- Parks Section -->
+
+<a name="parks"></a>
+<section class="gradiant">
+        <div class="container">
+            <h1 class="text-center h1margin">Parks</h1>
+                <div class="row col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="card col-12 col-sm-12 col-md-12 col-xl-4 mx-auto" style="width: 18rem;">
+                            <img class="card-img-top" src="images\sixflags.jpg" alt="Six Flags Entrance">
+                                <div class="card-body">
+                                    <h3 class="card-title">Amusement Park</h3>
+                                    <p class="card-text">Six Flags Amusement Park contains some of the best and most intense 
+                                        rollercoasters in the world!</p>             
+                                </div>
+                        </div>
+                        <div class="card col-12 col-sm-12 col-md-12 col-xl-4 mx-auto" style="width: 18rem;">
+                            <img class="card-img-top" src="images\hurricaneharbor.jpg" alt="Hurricane Harbor Image">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hurricane Harbor</h3>
+                                    <p class="card-text">Looking to cool off on a hot day? Hurricance Harbor is Six Flags’ waterpark 
+                                        where you can sit back and enjoy the sun!</p>
+                                  
+                                </div>
+                        </div>
+                        <div class="card col-12 col-sm-12 col-md-12 col-xl-6 mx-auto" style="width: 18rem;">
+                            <img class="card-img-top" src="images\safari.jpg" alt="Image of Ostrich from Six Flags Adventure">
+                                <div class="card-body">
+                                    <h3 class="card-title">Off Road Adventure Safari</h3>
+                                    <p class="card-text">The Six Flags Off Road Adventure Safari is a 15 minute ride where you 
+                                        can see some of the most exotic animals in the world!</p>
+                                    
+                                </div>
+                        </div>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- Best Rides Section -->
+
+<a name="bestrides"></a>
+<section class="gradiant3">
+    <div class="container border-top">
+        <h1 class="text-center h1margin">Best Rides</h1>
+            <div class="row col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6" >
+                        <img src="images\eltoro.jpg" class="img-responsive imageedit" alt="Image of El Toro Rollercoaster" >
+                    </div>
+                    <div class=" col-12 col-sm-12 col-md-12 col-xl-6" >
+                        <img src="images\bizzaro.jpg" class="img-responsive imageedit" alt="Image of Bizarro Rollercoaster" >
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                        <img src="images\kingdaka.jpg" class="img-responsive imageedit" alt="Image of Kingda Ka Rollercoaster" >
+                    </div>
+                    <div class=" col-12 col-sm-12 col-md-12 col-xl-6" >
+                        <img src="images\thejoker.jpg" class="img-responsive imageedit" alt="Image of THe Joker Rollercoaster" >
+                    </div>
+            </div>
+    </div>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+<!-- Recommended Activity Section -->
+
+<a name="recommendedactivity"></a>
+<section class="gradiant">
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-xl-12"> 
+            <h1 class="h1margin">Recommended Activity</h1>
+        </div>
+            <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+            <div class="card">
+                    <img src="images\nitro.jpg" class="card-img-top img-fluid" alt="Image of Nitro Rollercoaster" height="300">
+                    <div class="card-body">
+                      <h3 class="card-title subhead blue2">Nitro Rollercoaster</h3>
+                      <p class="body">One of the most intense rollercoasters at Six Flags Great Adventure, the 
+                        Nitro is a must ride. Featuring extreme drops and insane speeds, this coaster surely is
+                         not for the faint of heart, but be sure to check it out if you can handle it.</p>
+                    </div>
+            </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------------------------- -->
+<!-- Gallery Section -->
+
+<a name="gallery"></a>
+<section class="gradiant4"> 
+        <div class="container border-top">
+            <h1 class="text-center h1margin">Gallery</h1>
+                <div class="row col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-6" >
+                            <img src="images\sixflags.jpg" class="img-responsive imageedit" alt="Image of Six Flags Entrance"  height="300">
+                        </div>
+                        <div class=" col-12 col-sm-12 col-md-12 col-xl-6" >
+                            <img src="images\rides.jpg" class="img-responsive imageedit" alt="Image of Six Flags Rollercoaster Ride"  height="300">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                            <img src="images\attractions.jpg" class="img-responsive imageedit" alt="Image of People posing with Porky the Pig"  height="300">
+                        </div>
+                        <div class=" col-12 col-sm-12 col-md-12 col-xl-6">
+                            <img src="images\food.jpg" class="img-responsive imageedit" alt="Image of Image of Directions to Restaurants" height="300" >
+                        </div>
+                </div>
+        </div>
+</section>
 
 
 
 
 
-  <footer class="page-footer font-small blue pt-4">
-    <div class="container-fluid text-center text-md-left">
+<!-- ------------------------------------------------------------------------- -->
+<!-- Contact Section-->
+
+<a name="contact"></a>
+<section> 
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+          <h1 class="h1margin">Contact</h1>
+            <form>
+                <div class="form-group">
+                  <label for="name"><h5>Name</h5></label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Insert Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="email"><h5>Email</h5></label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Insert Email">
+                </div>      
+
+                <div class="form-group">
+                  <label for="phone"><h5>Phone</h5></label>
+                  <input type="tel" class="form-control" id="phone" aria-describedby="phone" placeholder="Insert Phone Number">
+                </div>     
+
+                <div class="form-group">
+                  <label for="message"><h5>Message</h5></label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="What can we help you with?"></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="button" class="btn btn-primary btn-lg round gradiant"><text style="color:#440381;">Submit</text></button>
+                </div>
+            </form>
+          </div>
+      </div>
+    </div>
+</section>
+
+
+
+<!-- ------------------------------------------------------------------------ -->
+<!-- Footer -->
+
+<footer class="page-footer font-small blue pt-4">
+    <div class="container-fluid text-center ">
       <div class="row">
-        <div class="col-md-6 mt-md-0 mt-3">
-          <h5 class="text-uppercase">Footer Content</h5>
-          <p>Here you can use rows and columns here to organize your footer content.</p>
+        <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+          <h5>Travel 363</h5>
+          <p class="purple">Privacy Policy | Terms of Service | Disclaimer</p>
         </div>
       </div>
     </div>
 </footer>
-
-
-<body>
     
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
